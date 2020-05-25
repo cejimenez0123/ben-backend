@@ -1,2 +1,0 @@
-module CommericialsHelper
-end

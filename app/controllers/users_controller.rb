@@ -7,7 +7,7 @@ class UsersController < ApplicationController
         user = User.create(name: params["name"], email: params["email"],
         password: params["password"], tipo: params["tipo"])
         session[:user_id] = user.id
-        render json: user
+        render json: UserSerializer.new(user)
     end
     def index 
         users = User.all 
@@ -17,4 +17,5 @@ class UsersController < ApplicationController
         user = User.all.find_by(id: params[:id])
         render json: UserSerializer.new(user).serialized_json
     end
+
 end

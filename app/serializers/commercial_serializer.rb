@@ -1,4 +1,4 @@
 class CommercialSerializer
   include FastJsonapi::ObjectSerializer
-  attributes :name,:user,:address,:city,:state,:zipcode,
+  attributes :id,:name,:user,:address,:max_occupancy,:city,:state,:zipcode
 end

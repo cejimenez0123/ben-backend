@@ -15,8 +15,10 @@ ActiveRecord::Schema.define(version: 2020_05_12_132845) do
   create_table "commercials", force: :cascade do |t|
     t.string "name"
     t.string "user_id"
-    t.string "email"
     t.string "address"
+    t.string "city"
+    t.string "state"
+    t.string "zipcode"
     t.integer "max_occupancy"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
