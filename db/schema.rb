@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 2020_05_12_132845) do
     t.string "state"
     t.string "zipcode"
     t.integer "max_occupancy"
+    t.integer "current_occupancy"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
